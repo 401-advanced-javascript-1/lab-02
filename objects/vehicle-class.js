@@ -22,6 +22,12 @@ class Motorcycle {
     this.wheels = wheels;
   }
 
+  drive(){
+    return 'Moving Forward';
+  }
+  stop(){
+    return 'Stopping';
+  }
   wheelie(){
     return 'Wheee!';
   }
