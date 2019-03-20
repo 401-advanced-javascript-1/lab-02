@@ -32,3 +32,35 @@ Motorcycle.prototype.wheelie = () => {
 
 module.exports = {Car, Motorcycle};
 
+// Flying vehicle / airplane / helicopter
+
+const FlyingVehicle = function(name, wings){
+  this.name = name;
+  this.wings = wings;
+};
+
+FlyingVehicle.prototype.fly = () => {
+  return 'Flying up';
+};
+
+FlyingVehicle.prototype.divebomb = () => {
+  return 'oh my goodness!';
+};
+
+const Airplane = function(name){
+  FlyingVehicle.call(this, name, 2);
+};
+
+Airplane.prototype = new FlyingVehicle();
+
+const Helicopter = function(name){
+  FlyingVehicle.call(this, name, 0);
+};
+
+Helicopter.prototype = new FlyingVehicle();
+
+Helicopter.prototype.sideFly = () => {
+  return 'Flying sideways';
+};
+
+// Sea creatues / Lobster / Fish

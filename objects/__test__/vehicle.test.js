@@ -1,6 +1,8 @@
 'use strict';
 
 const VehicleConstructor = require('../vehicle-constructor.js');
+//const VehicleConstructor = require('../vehicle-class.js');
+//const VehicleConstructor = require('../vehicle-factory.js');
 
 let types = ['Constructor'];
 
