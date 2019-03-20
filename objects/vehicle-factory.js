@@ -30,3 +30,35 @@ function MotorcycleFactory(name) {
 }
 
 module.exports = MotorcycleFactory;
+
+// Flying vehicles
+
+function AirplaneFactory(name){
+  let airplane = Object.assign(
+    {},
+    {name},
+    {fly},
+    {divebomb},
+  );
+  function fly () { return 'Flying up'; }
+  function divebomb () { return 'oh my goodness!'; }
+  return Object.freeze(airplane);
+}
+
+module.exports = AirplaneFactory;
+
+function HelicopterFactory(name){
+  let helicopter = Object.assign(
+    {},
+    {name},
+    {fly},
+    {divebomb},
+    {sideFly},
+  );
+  function fly () { return 'Flying up'; }
+  function divebomb () { return 'oh my goodness!'; }
+  function sideFly () { return 'Flying sideways'; }
+  return Object.freeze(helicopter);
+}
+
+module.exports = HelicopterFactory;
