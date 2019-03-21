@@ -31,8 +31,16 @@ List.prototype.shift = function(){
   return returnValue;
 };
 
-List.prototype.unshift = function(){
-
+List.prototype.unshift = function(...item){
+  let origLength = this.length;
+  let newLength = this.length + item.length;
+  for(let i=origLength -1; i>=0; i--){
+    this.data[newLength-1] = this.data[origLength-1];
+  }
+  for(let i=0; i<item.length; i++){
+    this.data[i] = item[i];
+  }
+  return newLength;
 };
 
 List.prototype.forEach = function (){

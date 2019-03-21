@@ -3,6 +3,7 @@ This lab demonstrates use of classes and their implementation.
 
 ## Links and Resources
 [Github Repo](https://github.com/401-advanced-javascript-1/lab-02)
+[Travis Dashboard](https://www.travis-ci.com/401-advanced-javascript-1/lab-02)
 
 ## Documentation
 
